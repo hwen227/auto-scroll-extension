@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 10px;
+            width: 200px;
+        }
+
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Auto Scroller</h3>
+
+    <label>
+        Speed (1 ~ 100):
+        <input type="number" id="speed" value="50" min="1" max="100">
+    </label>
+
+
+    <label>
+        Direction:
+        <select id="direction">
+            <option value="1">Down</option>
+            <option value="-1">Up</option>
+        </select>
+    </label>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
